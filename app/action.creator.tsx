@@ -1,14 +1,16 @@
-export default class DispatchActions {
+import * as Actions from "./actions";
+
+export default class ActionCreator {
   private dispatch: (action: any) => any;
   constructor(dispatch: (action: any) => any) {
-    this.dispatch = dispatch
+    this.dispatch = dispatch;
   }
 
   public increment(amount: number) {
-    this.dispatch({ type: "INCREMENT", amount: amount})
+    this.dispatch(Actions.increment(amount));
   }
 
   public decrement(amount: number) {
-    this.dispatch({ type: "DECREMENT", amount: amount})
+    this.dispatch(Actions.decrement(amount));
   }
 }
