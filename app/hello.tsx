@@ -14,8 +14,8 @@ export default class MyComponent extends React.Component<Props, {}> {
       <div>
         <div>{this.props.content}</div>
         <div>{this.props.value.num}
-          <button onClick={() => {this.props.actions.increment(1)}}>Increment</button>
-          <button onClick={() => {this.props.actions.decrement(1)}}>Decrement</button>
+          <button onclick={() => {this.props.actions.increment(1)}}>Increment</button>
+          <button onclick={() => {this.props.actions.decrement(1)}}>Decrement</button>
         </div>
       </div>
     );
