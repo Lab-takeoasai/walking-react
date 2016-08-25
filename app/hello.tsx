@@ -1,11 +1,10 @@
 import * as React from 'react';
 import actions from "./action.creator";
+import {State} from "./reducers";
 
 export interface Props {
   content: string;
-  value: {
-    num: any;
-  };
+  value: State;
   actions: actions;
 }
 
