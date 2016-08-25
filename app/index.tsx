@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import store from "./store";
-import Actions from "./actions";
+import Actions from "./action.creator";
 import Hello from "./hello";
 
 function render() {

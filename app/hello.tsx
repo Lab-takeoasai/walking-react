@@ -1,5 +1,5 @@
 import * as React from 'react';
-import actions from "./actions";
+import actions from "./action.creator";
 
 export interface Props {
   content: string;
