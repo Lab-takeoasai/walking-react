@@ -1,12 +1,14 @@
+import {ActionType} from "../constants";
+
 export interface State {
   num: number;
 }
 
 export function counter(state = { num: 0 }, action: any): State {
   switch (action.type) {
-    case "INCREMENT":
+    case ActionType.Increment:
       return { num: state.num + action.amount };
-    case "DECREMENT":
+    case ActionType.Decrement:
       return { num: state.num - action.amount };
     default:
       return state
